@@ -3,77 +3,267 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anwar Sepúlveda · Growth y atribución para negocios que venden por WhatsApp</title>
-<meta name="description" content="Ayudo a negocios que venden por WhatsApp a saber qué anuncio les trae ventas de verdad. Empieza con el diagnóstico gratuito de 2 minutos.">
-<meta property="og:title" content="Anwar Sepúlveda · Growth y atribución">
-<meta property="og:description" content="¿Qué anuncio te trae ventas de verdad? Haz tu diagnóstico gratis — 2 minutos, resultados al instante.">
+<title>Anwar Sepúlveda · Socio de crecimiento</title>
+<meta name="description" content="En 2 minutos te digo cuál de las 13 áreas de tu negocio te está frenando para vender más. Diagnóstico gratis, 10 preguntas, resultados al instante.">
+<meta property="og:title" content="Lo que no mides, no existe.">
+<meta property="og:description" content="En 2 minutos te digo cuál de las 13 áreas de tu negocio te está frenando para vender más. Gratis, 10 preguntas.">
 <meta property="og:url" content="https://anwarsepulveda.com">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%230A2540'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%2383C341'/%3E%3Cg stroke='%2383C341' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M16 3v4M16 25v4M3 16h4M25 16h4M6.8 6.8l2.8 2.8M22.4 22.4l2.8 2.8M25.2 6.8l-2.8 2.8M9.6 22.4l-2.8 2.8'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="canonical" href="https://anwarsepulveda.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%230A2E5C'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%2383C341'/%3E%3Cg stroke='%2383C341' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M16 3v4M16 25v4M3 16h4M25 16h4M6.8 6.8l2.8 2.8M22.4 22.4l2.8 2.8M25.2 6.8l-2.8 2.8M9.6 22.4l-2.8 2.8'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#0A2540;--navy2:#0D2E4E;--green:#83C341;--red:#D42A2A;--cream:#FBFAF7}
+  :root{
+    --navy:#0A2E5C;--ink:#12385F;--red:#D42A2A;--green:#83C341;
+    --line:#E4E7EC;--hair:#EEF1F5;--tint:#F7F9FC;--muted:#5A6B7D;
+    --mono:ui-monospace,SFMono-Regular,'SF Mono',Menlo,monospace;
+  }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
-  body{
-    font-family:'Plus Jakarta Sans',-apple-system,system-ui,sans-serif;
-    background:radial-gradient(1100px 700px at 78% -10%, #14406B 0%, var(--navy) 55%) var(--navy);
-    color:#fff;display:flex;flex-direction:column;min-height:100dvh;
-  }
-  main{flex:1;display:flex;align-items:center;justify-content:center;padding:32px 22px}
-  .box{max-width:640px;width:100%;text-align:center}
-  .gears{display:flex;justify-content:center;margin-bottom:22px}
-  .gears svg{width:120px;height:auto;display:block}
-  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
-  h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(52px,11vw,88px);line-height:.96;letter-spacing:.01em;margin-bottom:18px}
-  .line{font-size:clamp(16px,2.6vw,19px);line-height:1.55;color:#DCE6F2;max-width:520px;margin:0 auto 10px}
-  .line b{color:#fff}
-  .status{font-size:14px;color:#9FB3C8;margin:18px auto 22px}
-  .cta{
-    display:inline-block;background:var(--red);color:#fff;text-decoration:none;
-    font-weight:800;font-size:clamp(16px,2.6vw,18px);
-    padding:16px 30px;border-radius:14px;
-    box-shadow:0 10px 28px rgba(212,42,42,.35);
-    transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .cta:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(212,42,42,.45)}
-  .trust{font-size:13px;color:#9FB3C8;margin-top:14px}
-  footer{padding:20px;text-align:center;font-size:12.5px;color:#7E93AA}
-  footer b{color:#B9C9DA;font-weight:700}
-  @media (max-height:640px){.gears svg{width:90px}.status{margin:12px auto 16px}}
+  html{scroll-behavior:smooth}
+  body{font-family:'Plus Jakarta Sans',-apple-system,system-ui,sans-serif;background:#FFFFFF;color:var(--navy);-webkit-font-smoothing:antialiased;line-height:1.5}
+  .wrap{max-width:680px;margin:0 auto;padding:0 22px}
+  .narrow{max-width:544px;margin-left:auto;margin-right:auto}
+
+  /* ---------- etiquetas pequeñas reutilizables ---------- */
+  .rotulo{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+  /* ---------- hero ---------- */
+  .hero{text-align:center;padding:66px 0 0}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:100px;padding:7px 15px 7px 12px}
+  .kicker i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(131,195,65,.18);font-style:normal}
+  h1{font-size:clamp(35px,7.6vw,58px);font-weight:800;line-height:1.06;letter-spacing:-.025em;margin-top:24px}
+  h1 em{font-style:normal;color:var(--red)}
+  .lead{font-size:clamp(17px,3vw,20px);line-height:1.5;max-width:520px;margin:20px auto 0;color:var(--ink)}
+
+  /* ---------- CTA ---------- */
+  .cta-box{text-align:center;padding:30px 0 0}
+  .cta{display:inline-block;white-space:nowrap;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:clamp(16px,2.8vw,19px);padding:17px 32px;border-radius:12px;box-shadow:0 10px 26px rgba(212,42,42,.22);transition:transform .15s ease,box-shadow .15s ease}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(212,42,42,.28)}
+  .trust{font-size:13.5px;color:var(--muted);margin-top:13px}
+
+  /* ---------- tira de datos ---------- */
+  .datos{display:flex;justify-content:center;margin-top:42px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+  .datos div{flex:1;text-align:center;padding:18px 6px}
+  .datos div + div{border-left:1px solid var(--hair)}
+  .datos b{display:block;font-size:clamp(20px,4.4vw,26px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .datos b .rojo{color:var(--red)}
+  .datos > div > span{display:block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+
+  /* ---------- cuerpo ---------- */
+  .cuerpo{padding:58px 0 0}
+  .cuerpo p{font-size:clamp(16px,2.7vw,18px);line-height:1.65;color:var(--ink)}
+  .cuerpo p + p{margin-top:20px}
+  .cuerpo .golpe{font-size:clamp(21px,4.2vw,28px);font-weight:800;line-height:1.25;letter-spacing:-.018em;color:var(--navy)}
+  .cuerpo .cierre{font-weight:700;color:var(--navy)}
+  .rojo{color:var(--red)}
+
+  /* ---------- pasos ---------- */
+  .pasos{padding:58px 0 0}
+  .pasos .rotulo{display:block;text-align:center;margin-bottom:22px}
+  .pasos ol{list-style:none;counter-reset:p}
+  .pasos li{counter-increment:p;position:relative;padding:16px 0 16px 52px;border-top:1px solid var(--hair)}
+  .pasos li:last-child{border-bottom:1px solid var(--hair)}
+  .pasos li::before{content:counter(p,decimal-leading-zero);position:absolute;left:0;top:17px;font-family:var(--mono);font-size:13px;font-weight:700;color:var(--red);letter-spacing:.04em}
+  .pasos h3{font-size:16px;font-weight:700;line-height:1.35}
+  .pasos p{font-size:14.5px;color:var(--muted);line-height:1.55;margin-top:3px}
+
+  /* ---------- las 13 áreas ---------- */
+  .areas{margin-top:60px;background:var(--tint);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:44px 0 40px}
+  .areas .rotulo{display:block;text-align:center}
+  .areas h2{text-align:center;font-size:clamp(20px,3.8vw,25px);font-weight:800;letter-spacing:-.018em;line-height:1.25;margin-top:12px}
+  .areas .sub{text-align:center;font-size:14.5px;color:var(--muted);margin-top:10px;max-width:420px;margin-left:auto;margin-right:auto}
+  .grupo{margin-top:30px}
+  .grupo .tit{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-bottom:9px;border-bottom:1px solid #DFE5ED}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .grid span{display:flex;align-items:flex-start;gap:9px;font-size:14px;font-weight:600;color:var(--ink);padding:11px 14px 11px 0;border-bottom:1px solid #E8ECF2}
+  .grid span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--green);flex:none;margin-top:7px}
+  .grid span.full{grid-column:1/-1}
+  .grid.num span::before{background:var(--navy)}
+  @media (max-width:359px){.grid{grid-template-columns:1fr}}
+
+  /* ---------- qué te llevas ---------- */
+  .llevas{margin-top:58px;border:1px solid var(--line);border-radius:18px;padding:34px 26px 30px;box-shadow:0 14px 38px -26px rgba(10,46,92,.32)}
+  .llevas .rotulo{display:block;text-align:center}
+  .llevas h2{text-align:center;font-size:clamp(20px,3.8vw,25px);font-weight:800;letter-spacing:-.018em;line-height:1.25;margin-top:11px}
+  .llevas ul{list-style:none;margin-top:24px}
+  .llevas li{position:relative;padding:15px 0 15px 34px;border-top:1px solid var(--hair)}
+  .llevas li:first-child{border-top:0;padding-top:2px}
+  .llevas li::before{content:"";position:absolute;left:0;top:19px;width:18px;height:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%2383C341'/%3E%3Cpath d='M7 12.4l3.2 3.2L17 8.8' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+  .llevas li:first-child::before{top:6px}
+  .llevas b{display:block;font-size:16px;font-weight:700;line-height:1.35;color:var(--navy)}
+  .llevas p{font-size:14.5px;color:var(--muted);line-height:1.55;margin-top:3px}
+
+  /* ---------- firma ---------- */
+  .firma{padding:52px 0 0}
+  .firma p{font-size:clamp(15px,2.5vw,17px);line-height:1.65;color:var(--muted)}
+  .firma p + p{margin-top:14px}
+  .firma p.remate{font-weight:700;color:var(--navy)}
+  .firma p.nombre{margin-top:28px;padding-top:22px;border-top:1px solid var(--hair);font-size:17px;font-weight:800;color:var(--navy);line-height:1.4}
+  .nombre span{display:block;font-size:14.5px;font-weight:700;color:var(--navy);margin-top:5px}
+  .nombre span.esp2{font-size:14px;font-weight:600;color:var(--muted);margin-top:2px}
+
+  /* ---------- cierre ---------- */
+  .cierre-cta{text-align:center;margin-top:54px;padding:40px 20px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 12px 34px -22px rgba(10,46,92,.35)}
+  .cierre-cta h2{font-size:clamp(20px,4vw,26px);font-weight:800;letter-spacing:-.018em;line-height:1.25}
+  .cierre-cta .cta{margin-top:22px}
+  .cierre-cta .trust{margin-top:12px}
+
+  /* ---------- footer (escala de footer, no de sección) ---------- */
+  footer{margin-top:56px;border-top:1px solid var(--line);padding:20px 0 30px}
+  .frow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 18px}
+  .flinks{display:flex;flex-wrap:wrap;gap:4px 16px}
+  .flinks a{font-size:12.5px;font-weight:500;color:var(--muted);text-decoration:none}
+  .flinks a:hover{color:var(--red)}
+  .cred{font-size:12px;color:#8494A5}
+  .cred b{color:var(--muted);font-weight:700}
+  @media (max-width:520px){.frow{justify-content:center;text-align:center}.flinks{justify-content:center}}
 </style>
 </head>
 <body>
-<main>
-  <div class="box">
-    <div class="gears" aria-hidden="true">
-      <!-- los 3 engranes: firma visual del diagnóstico -->
-      <svg viewBox="0 0 240 120">
-        <g fill="none" stroke-linecap="round">
-          <g stroke="#3E5F82" stroke-width="7"><path d="M60 14v12M60 94v12M14 60h12M94 60h12M27.5 27.5l8.5 8.5M84 84l8.5 8.5M92.5 27.5L84 36M36 84l-8.5 8.5"/></g>
-          <circle cx="60" cy="60" r="34" stroke="#3E5F82" stroke-width="7"/>
-          <circle cx="60" cy="60" r="13" fill="#3E5F82"/>
-          <g stroke="#83C341" stroke-width="8"><path d="M150 6v14M150 100v14M96 53h14M190 53h14M112 15l10 10M178 91l10 10M188 15l-10 10M122 91l-10 10"/></g>
-          <circle cx="150" cy="53" r="40" stroke="#83C341" stroke-width="8"/>
-          <circle cx="150" cy="53" r="15" fill="#83C341"/>
-          <g stroke="#D42A2A" stroke-width="6"><path d="M208 62v10M208 108v10M186 90h10M220 90h10M192 74l7 7M217 99l7 7M224 74l-7 7M199 99l-7 7"/></g>
-          <circle cx="208" cy="90" r="24" stroke="#D42A2A" stroke-width="6"/>
-          <circle cx="208" cy="90" r="9" fill="#D42A2A"/>
-        </g>
-      </svg>
-    </div>
-    <div class="eyebrow">Growth · Atribución · Ventas por WhatsApp</div>
-    <h1>Anwar Sepúlveda</h1>
-    <p class="line">Ayudo a negocios que venden por WhatsApp a saber <b>qué anuncio les trae ventas de verdad</b> — y a escalar lo que sí funciona.</p>
-    <p class="status">Este sitio está en construcción. Lo que ya está listo es esto:</p>
-    <a class="cta" href="https://diagnostico.anwarsepulveda.com">Haz tu diagnóstico gratis →</a>
-    <p class="trust">2 minutos · 10 preguntas · resultados al instante</p>
+
+<div class="wrap">
+
+  <header class="hero">
+    <span class="kicker"><i></i>Diagnóstico gratis · 2 minutos</span>
+    <h1>Lo que no mides,<br><em>no existe.</em></h1>
+    <p class="lead">En 2 minutos te digo cuál de las 13 áreas de tu negocio te está frenando para vender más.</p>
+  </header>
+
+  <div class="cta-box">
+    <a class="cta" href="https://diagnostico.anwarsepulveda.com/">Empezar mi diagnóstico &rarr;</a>
+    <p class="trust">Gratis · 10 preguntas · resultados al instante</p>
   </div>
-</main>
-<footer><b>OptimizAds</b> · México · <span id="yr">2026</span></footer>
+
+  <div class="datos">
+    <div><b><span class="rojo">100+</span></b><span>Negocios revisados</span></div>
+    <div><b>13</b><span>Áreas que mido</span></div>
+    <div><b>2 min</b><span>Lo que te toma</span></div>
+  </div>
+
+  <section class="cuerpo narrow">
+    <p class="golpe">¿Quién responde por <span class="rojo">la venta</span> en tu negocio?</p>
+    <p>Yo entro por lo que no estás midiendo. Si tus ventas se cierran por WhatsApp, nadie sabe qué anuncio las trajo.</p>
+    <p class="cierre">Encuentro dónde se te está yendo el dinero. Y desde ahí escalamos.</p>
+  </section>
+
+  <section class="pasos narrow">
+    <span class="rotulo">Cómo funciona</span>
+    <ol>
+      <li>
+        <h3>Contestas 10 preguntas</h3>
+        <p>Sin datos de tu contabilidad. Lo que ya sabes de tu negocio basta.</p>
+      </li>
+      <li>
+        <h3>Te armo tu mapa de 13 áreas</h3>
+        <p>Cada una queda en verde, amarillo o rojo, según cómo la traes hoy.</p>
+      </li>
+      <li>
+        <h3>Ves cuál te está frenando</h3>
+        <p>Y qué hacer con esa, antes de meterle un peso más a anuncios.</p>
+      </li>
+    </ol>
+  </section>
+
+</div>
+
+<section class="areas">
+  <div class="wrap">
+    <span class="rotulo">Lo que reviso</span>
+    <h2>Las 13 áreas</h2>
+    <p class="sub">Cinco son números. Ocho son la máquina que los produce. Si una está en rojo, se nota en todas las demás.</p>
+
+    <div class="grupo narrow">
+      <p class="tit">Los números</p>
+      <div class="grid num">
+        <span>Venta mensual</span>
+        <span>Tasa de cierre</span>
+        <span>CAC</span>
+        <span>ROAS</span>
+        <span>Utilidad</span>
+        <span>Atribución</span>
+      </div>
+    </div>
+
+    <div class="grupo narrow">
+      <p class="tit">La máquina</p>
+      <div class="grid">
+        <span>Oferta</span>
+        <span>Cliente</span>
+        <span>Equipo de ventas</span>
+        <span>Respuesta a leads</span>
+        <span>Generación de ads</span>
+        <span>Creatividades</span>
+        <span class="full">Automatización</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <section class="llevas narrow">
+    <span class="rotulo">Al terminar</span>
+    <h2>Qué te llevas</h2>
+    <ul>
+      <li>
+        <b>Tu mapa completo</b>
+        <p>Las 13 áreas, cada una en verde, amarillo o rojo. En una pantalla ves cómo traes el negocio hoy.</p>
+      </li>
+      <li>
+        <b>Cuál te está frenando</b>
+        <p>No las 13 al mismo tiempo. La que hay que mover primero, y por qué esa y no otra.</p>
+      </li>
+      <li>
+        <b>Qué hacer esta semana</b>
+        <p>Los pasos concretos para esa área. Con los números de tu propio negocio, no con teoría.</p>
+      </li>
+      <li>
+        <b>El link en tu correo</b>
+        <p>Para volver a verlo cuando quieras, o pasárselo a quien te ayuda a operar.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="firma narrow">
+    <p>En 2011 fundé völtoch, mi marca de artículos deportivos. Llegamos a vender en más de 5,000 puntos de venta, en las cadenas más grandes de México.</p>
+    <p>Después escalé la venta en línea de 0 a $650,000 al mes. Y no sabía que estábamos perdiendo dinero.</p>
+    <p class="remate">No me lo escondió nadie. Yo no lo estaba midiendo.</p>
+    <p class="nombre">Anwar Sepúlveda<span>Socio de crecimiento</span><span class="esp2">Especialista en campañas que venden por WhatsApp</span></p>
+  </section>
+
+  <section class="cierre-cta">
+    <h2>Empecemos por saber<br>qué te está frenando.</h2>
+    <a class="cta" href="https://diagnostico.anwarsepulveda.com/">Empezar mi diagnóstico &rarr;</a>
+    <p class="trust">Gratis · 10 preguntas · resultados al instante</p>
+  </section>
+
+  <footer>
+    <div class="frow">
+      <div class="flinks">
+        <a href="/metrica-termostato/">Qué es la métrica termostato</a>
+        <a href="/que-es-un-growth-partner/">Qué es un socio de crecimiento</a>
+      </div>
+      <p class="cred">Anwar Sepúlveda · <span id="yr">2026</span></p>
+    </div>
+  </footer>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Anwar Sepúlveda",
+  "jobTitle":"Socio de crecimiento",
+  "url":"https://anwarsepulveda.com/",
+  "areaServed":["México","Estados Unidos"],
+  "knowsAbout":["Campañas que venden por WhatsApp","Medición de ventas","Crecimiento de negocios"],
+  "sameAs":["https://www.linkedin.com/in/anwarsepulveda","https://www.instagram.com/anwarsepulveda"]
+}
+</script>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
-<!-- home v1.0 -->
+<!-- home v2.3 · 21 ago 2026 -->
 </body>
 </html>
