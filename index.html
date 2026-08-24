@@ -3,255 +3,194 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anwar Sepúlveda · Socio de crecimiento</title>
-<meta name="description" content="En 2 minutos te digo cuál de las 13 áreas de tu negocio te está frenando para vender más. Diagnóstico gratis, 10 preguntas, resultados al instante.">
-<meta property="og:title" content="Lo que no mides, no existe.">
-<meta property="og:description" content="En 2 minutos te digo cuál de las 13 áreas de tu negocio te está frenando para vender más. Gratis, 10 preguntas.">
+<title>Anwar Sepúlveda</title>
+<meta name="description" content="He revisado más de 100 negocios por dentro. Apenas voy empezando a contarlo: casos reales con sus números, un diagnóstico gratis de tus 13 áreas, y el correo del Lente.">
+<meta property="og:title" content="Anwar Sepúlveda · El Lente del Negocio">
+<meta property="og:description" content="He revisado más de 100 negocios por dentro. Apenas voy empezando a contarlo.">
 <meta property="og:url" content="https://anwarsepulveda.com">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://anwarsepulveda.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%230A2E5C'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%2383C341'/%3E%3Cg stroke='%2383C341' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M16 3v4M16 25v4M3 16h4M25 16h4M6.8 6.8l2.8 2.8M22.4 22.4l2.8 2.8M25.2 6.8l-2.8 2.8M9.6 22.4l-2.8 2.8'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy:#0A2E5C;--ink:#12385F;--red:#D42A2A;--green:#83C341;
-    --line:#E4E7EC;--hair:#EEF1F5;--tint:#F7F9FC;--muted:#5A6B7D;
-    --mono:ui-monospace,SFMono-Regular,'SF Mono',Menlo,monospace;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:'Plus Jakarta Sans',-apple-system,system-ui,sans-serif;background:#FFFFFF;color:var(--navy);-webkit-font-smoothing:antialiased;line-height:1.5}
-  .wrap{max-width:680px;margin:0 auto;padding:0 22px}
-  .narrow{max-width:544px;margin-left:auto;margin-right:auto}
-
-  /* ---------- etiquetas pequeñas reutilizables ---------- */
-  .rotulo{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-
-  /* ---------- hero ---------- */
-  .hero{text-align:center;padding:66px 0 0}
-  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:100px;padding:7px 15px 7px 12px}
-  .kicker i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(131,195,65,.18);font-style:normal}
-  h1{font-size:clamp(35px,7.6vw,58px);font-weight:800;line-height:1.06;letter-spacing:-.025em;margin-top:24px}
-  h1 em{font-style:normal;color:var(--red)}
-  .lead{font-size:clamp(17px,3vw,20px);line-height:1.5;max-width:520px;margin:20px auto 0;color:var(--ink)}
-
-  /* ---------- CTA ---------- */
-  .cta-box{text-align:center;padding:30px 0 0}
-  .cta{display:inline-block;white-space:nowrap;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:clamp(16px,2.8vw,19px);padding:17px 32px;border-radius:12px;box-shadow:0 10px 26px rgba(212,42,42,.22);transition:transform .15s ease,box-shadow .15s ease}
-  .cta:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(212,42,42,.28)}
-  .trust{font-size:13.5px;color:var(--muted);margin-top:13px}
-
-  /* ---------- tira de datos ---------- */
-  .datos{display:flex;justify-content:center;margin-top:42px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-  .datos div{flex:1;text-align:center;padding:18px 6px}
-  .datos div + div{border-left:1px solid var(--hair)}
-  .datos b{display:block;font-size:clamp(20px,4.4vw,26px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
-  .datos b .rojo{color:var(--red)}
-  .datos > div > span{display:block;font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:6px}
-
-  .rojo{color:var(--red)}
-
-  /* ---------- pasos ---------- */
-  .pasos{padding:52px 0 0}
-  .pasos .rotulo{display:block;text-align:center;margin-bottom:22px}
-  .pasos ol{list-style:none;counter-reset:p}
-  .pasos li{counter-increment:p;position:relative;padding:16px 0 16px 52px;border-top:1px solid var(--hair)}
-  .pasos li:last-child{border-bottom:1px solid var(--hair)}
-  .pasos li::before{content:counter(p,decimal-leading-zero);position:absolute;left:0;top:17px;font-family:var(--mono);font-size:13px;font-weight:700;color:var(--red);letter-spacing:.04em}
-  .pasos h3{font-size:16px;font-weight:700;line-height:1.35}
-  .pasos p{font-size:14.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-
-  /* ---------- las 13 áreas ---------- */
-  .areas{margin-top:60px;background:var(--tint);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:44px 0 40px}
-  .areas .rotulo{display:block;text-align:center}
-  .areas h2{text-align:center;font-size:clamp(20px,3.8vw,25px);font-weight:800;letter-spacing:-.018em;line-height:1.25;margin-top:12px}
-  .areas .sub{text-align:center;font-size:14.5px;color:var(--muted);margin-top:10px;max-width:420px;margin-left:auto;margin-right:auto}
-  .grupo{margin-top:30px}
-  .grupo .tit{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-bottom:9px;border-bottom:1px solid #DFE5ED}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
-  .grid span{display:flex;align-items:flex-start;gap:9px;font-size:14px;font-weight:600;color:var(--ink);padding:11px 14px 11px 0;border-bottom:1px solid #E8ECF2}
-  .grid span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--green);flex:none;margin-top:7px}
-  .grid span.full{grid-column:1/-1}
-  .grid.num span::before{background:var(--navy)}
-  @media (max-width:359px){.grid{grid-template-columns:1fr}}
-
-  /* ---------- qué te llevas ---------- */
-  .llevas{margin-top:58px;border:1px solid var(--line);border-radius:18px;padding:34px 26px 30px;box-shadow:0 14px 38px -26px rgba(10,46,92,.32)}
-  .llevas .rotulo{display:block;text-align:center}
-  .llevas h2{text-align:center;font-size:clamp(20px,3.8vw,25px);font-weight:800;letter-spacing:-.018em;line-height:1.25;margin-top:11px}
-  .llevas ul{list-style:none;margin-top:24px}
-  .llevas li{position:relative;padding:15px 0 15px 34px;border-top:1px solid var(--hair)}
-  .llevas li:first-child{border-top:0;padding-top:2px}
-  .llevas li::before{content:"";position:absolute;left:0;top:19px;width:18px;height:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%2383C341'/%3E%3Cpath d='M7 12.4l3.2 3.2L17 8.8' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
-  .llevas li:first-child::before{top:6px}
-  .llevas b{display:block;font-size:16px;font-weight:700;line-height:1.35;color:var(--navy)}
-  .llevas p{font-size:14.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-
-  /* ---------- firma ---------- */
-  .firma{padding:52px 0 0}
-  .firma p{font-size:clamp(15px,2.5vw,17px);line-height:1.65;color:var(--muted)}
-  .firma p + p{margin-top:14px}
-  .firma p.remate{font-weight:700;color:var(--navy)}
-  .firma p.nombre{margin-top:28px;padding-top:22px;border-top:1px solid var(--hair);font-size:17px;font-weight:800;color:var(--navy);line-height:1.4}
-  .nombre span{display:block;font-size:14.5px;font-weight:700;color:var(--navy);margin-top:5px}
-  .nombre span.esp2{font-size:14px;font-weight:600;color:var(--muted);margin-top:2px}
-
-  /* ---------- cierre ---------- */
-  .cierre-cta{text-align:center;margin-top:54px;padding:40px 20px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 12px 34px -22px rgba(10,46,92,.35)}
-  .cierre-cta h2{font-size:clamp(20px,4vw,26px);font-weight:800;letter-spacing:-.018em;line-height:1.25}
-  .cierre-cta .cta{margin-top:22px}
-  .cierre-cta .trust{margin-top:12px}
-
-  /* ---------- footer (escala de footer, no de sección) ---------- */
-  footer{margin-top:56px;border-top:1px solid var(--line);padding:20px 0 30px}
-  .frow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 18px}
-  .flinks{display:flex;flex-wrap:wrap;gap:4px 16px}
-  .flinks a{font-size:12.5px;font-weight:500;color:var(--muted);text-decoration:none}
-  .flinks a:hover{color:var(--red)}
-  .cred{font-size:12px;color:#8494A5}
-  .cred b{color:var(--muted);font-weight:700}
-  @media (max-width:520px){.frow{justify-content:center;text-align:center}.flinks{justify-content:center}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>:root{--ink:#14171C;--navy:#0A2E5C;--red:#EA1A20;--green:#0A2E5C;--line:#E7EAEF;--muted:#6B7280;--soft:#F7F9FB}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Plus Jakarta Sans',-apple-system,system-ui,sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5}.wrap{max-width:840px;margin:0 auto;padding:0 24px}svg{display:block}.hero{padding:38px 0 0;max-width:680px}.mark{display:block;height:34px;width:auto;margin-bottom:26px}.fmark{display:block;height:18px;width:auto;margin-bottom:14px}h1{font-size:clamp(34px,6.6vw,52px);font-weight:800;line-height:1.06;letter-spacing:-.03em}h1 em{font-style:normal;color:var(--red)}.sub{font-size:clamp(17px,2.9vw,20px);line-height:1.55;color:var(--muted);margin-top:22px;max-width:560px}.sub b{color:var(--ink);font-weight:700}.aquien{margin-top:30px;padding:22px 24px;border-left:4px solid var(--navy);background:var(--soft);border-radius:0 14px 14px 0;max-width:620px}.aq-k{font-size:12px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}.aquien ul.li{margin-top:14px}.aquien ul.li li{font-size:16px;line-height:1.5;color:var(--muted);margin-top:13px}.aquien ul.li li b{color:var(--ink);font-weight:800}.aq-yo{margin-top:16px;font-size:17px;font-weight:800;color:var(--ink);line-height:1.4}.aq-f{margin-top:26px;padding-top:22px;border-top:1px solid #DFE4EA;font-size:15.5px;line-height:1.55;color:var(--ink);font-weight:600}.cosas{padding:64px 0 0}.sk{font-size:clamp(23px,4.2vw,30px);font-weight:800;letter-spacing:-.02em}.ss{font-size:15.5px;color:var(--muted);margin-top:9px;max-width:560px;line-height:1.55}.caja{border:1.5px solid var(--line);border-radius:18px;padding:26px;margin-top:20px;background:#fff}.caja + .caja{margin-top:14px}.cabeza{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}.kk{font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:#fff;background:var(--ink);border-radius:5px;padding:4px 8px}.kk.libre{background:var(--red)}.tt{font-size:clamp(21px,3.6vw,26px);font-weight:800;letter-spacing:-.015em}.dd{font-size:16px;color:var(--muted);margin-top:10px;line-height:1.55;max-width:520px}.dd b{color:var(--ink);font-weight:700}.split{display:grid;grid-template-columns:1fr 236px;gap:28px;align-items:start;margin-top:18px}@media(max-width:700px){.split{grid-template-columns:1fr;gap:22px}}.llevas{font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-top:28px}.split .llevas{margin-top:2px}ul.li{list-style:none;margin-top:11px}ul.li li{font-size:15.5px;line-height:1.55;padding-left:26px;position:relative;margin-top:10px}ul.li li::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-radius:3px;background:var(--green)}ul.li li b{font-weight:700}.btn{display:inline-block;margin-top:20px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:16.5px;padding:15px 26px;border-radius:11px;box-shadow:0 8px 22px rgba(212,42,42,.2)}.btn:hover{transform:translateY(-1px)}.nota{font-size:13px;color:var(--muted);margin-top:11px}.fono{background:var(--ink);border-radius:26px;padding:9px;box-shadow:0 16px 40px rgba(10,23,40,.17)}.fono img{width:100%;display:block;border-radius:18px}.fcap{font-size:12.5px;color:var(--muted);text-align:center;margin-top:11px;line-height:1.45}.nlrow{display:flex;gap:8px;margin-top:26px;max-width:420px;flex-wrap:wrap}.nlrow input{flex:1 1 190px;min-width:0;font-family:inherit;font-size:15.5px;padding:14px 15px;border:1.5px solid var(--line);border-radius:11px;background:#fff;color:var(--ink)}.nlrow input:focus{outline:none;border-color:var(--navy)}.nlrow button{font-family:inherit;background:var(--navy);color:#fff;border:none;border-radius:11px;padding:14px 24px;font-size:15.5px;font-weight:800;cursor:pointer}.nlok{font-size:15px;font-weight:700;color:#2F7A16;margin-top:14px}.nlerr{font-size:13.5px;color:var(--red);margin-top:8px}.posts{padding:70px 0 0}.plist{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:700px){.plist{grid-template-columns:1fr}}.p{border:1.5px solid var(--line);border-radius:15px;padding:19px 20px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;transition:border-color .15s ease,transform .15s ease}.p:hover{border-color:var(--ink);transform:translateY(-2px)}.pm{display:flex;align-items:center;gap:8px;color:var(--muted)}.pm svg{width:15px;height:15px;fill:currentColor;flex:none}.pm span{font-size:11.5px;font-weight:800;letter-spacing:.9px;text-transform:uppercase}.ph{font-size:16.5px;font-weight:700;line-height:1.42;margin-top:11px;flex:1}.pg{font-size:13.5px;font-weight:800;color:var(--navy);margin-top:13px}.sigueme{margin-top:26px;padding-top:24px;border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;flex-wrap:wrap}.sigueme .sl{font-size:15px;font-weight:700}.redes{display:flex;gap:9px}.redes a{width:42px;height:42px;border:1.5px solid var(--line);border-radius:11px;display:grid;place-items:center;color:var(--ink);transition:border-color .15s ease,color .15s ease}.redes a:hover{border-color:var(--ink)}.redes svg{width:19px;height:19px;fill:currentColor}.firma{max-width:660px;padding:56px 0 0;margin-top:56px;border-top:1px solid var(--line)}.firma p{font-size:16px;line-height:1.64;color:var(--muted)}.firma p + p{margin-top:14px}.cf-intro{margin-top:18px;font-size:16px;line-height:1.62;color:var(--ink)}.parriba{font-weight:800;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--line);white-space:nowrap}.parriba i{font-style:normal;color:var(--red);margin-left:2px}.parriba:hover{border-bottom-color:var(--red)}html{scroll-behavior:smooth}.cifras{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}@media(max-width:700px){.cifras{grid-template-columns:1fr;gap:12px}}.cf{border:1.5px solid var(--line);border-radius:14px;padding:18px 18px 16px}.cf-n{font-size:clamp(19px,2.9vw,23px);font-weight:800;letter-spacing:-.025em;color:var(--ink);line-height:1.15;white-space:nowrap}.cf-n i{font-style:normal;color:var(--red);margin:0 3px}.cf-d{font-size:13.5px;line-height:1.45;color:var(--muted);margin-top:9px}.cf-pie{margin-top:36px;font-size:15.5px;line-height:1.6;color:var(--ink);font-weight:600}.firma p.remate{font-weight:800;color:var(--ink);font-size:17px;margin-top:16px}.firma p.nombre{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-size:17px;font-weight:800;color:var(--ink);line-height:1.4}.nombre span{display:block;font-size:14px;font-weight:600;color:var(--muted);margin-top:3px}footer{border-top:1px solid var(--line);margin-top:52px;padding:26px 0 46px}.links{display:flex;flex-wrap:wrap;gap:9px 22px;margin-bottom:16px}.links a{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}.links a:hover{border-bottom-color:var(--red)}.cred{font-size:12.5px;color:var(--muted)}.cred b{color:var(--ink);font-weight:700}</style>
 </head>
 <body>
-
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-li" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.1 24 12.07z"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.89 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07c-4.35.2-6.78 2.62-6.98 6.98C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></symbol>
+<symbol id="i-yt" viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.08 0 12 0 12s0 3.92.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></symbol>
+</svg>
 <div class="wrap">
-
-  <header class="hero">
-    <span class="kicker"><i></i>Diagnóstico gratis · 2 minutos</span>
-    <h1>Lo que no mides,<br><em>no existe.</em></h1>
-    <p class="lead">En 2 minutos te digo cuál de las 13 áreas de tu negocio te está frenando para vender más.</p>
-  </header>
-
-  <div class="cta-box">
-    <a class="cta" href="https://diagnostico.anwarsepulveda.com/">Empezar mi diagnóstico &rarr;</a>
-    <p class="trust">Gratis · 10 preguntas · resultados al instante</p>
-  </div>
-
-  <div class="datos">
-    <div><b><span class="rojo">100+</span></b><span>Negocios revisados</span></div>
-    <div><b>13</b><span>Áreas que mido</span></div>
-    <div><b>2 min</b><span>Lo que te toma</span></div>
-  </div>
-
-  <section class="pasos narrow">
-    <span class="rotulo">Cómo funciona</span>
-    <ol>
-      <li>
-        <h3>Contestas 10 preguntas</h3>
-        <p>Sin datos de tu contabilidad. Lo que ya sabes de tu negocio basta.</p>
-      </li>
-      <li>
-        <h3>Te armo tu mapa de 13 áreas</h3>
-        <p>Cada una queda en verde, amarillo o rojo, según cómo la traes hoy.</p>
-      </li>
-      <li>
-        <h3>Ves cuál te está frenando</h3>
-        <p>Y qué hacer con esa, antes de meterle un peso más a anuncios.</p>
-      </li>
-    </ol>
-  </section>
-
+<header class="hero">
+<img class="mark" src="/as.svg" width="184" height="34" alt="AS. Anwar Sepúlveda">
+<h1>He revisado más de 100 negocios por dentro.<br><em>Apenas voy empezando a contarlo.</em></h1>
+<p class="sub">Aquí subo lo que encuentro adentro: <b>el número que delató la fuga, qué se hizo, y qué pasó después.</b> Casos reales, sin nombres. Te va a servir aunque nunca trabajemos juntos.</p>
+<div class="aquien">
+<div class="aq-k">De qué negocios hablo</div>
+<ul class="li">
+<li><b>Los que cierran hablando.</b> Clínicas, servicios profesionales, comercios. El anuncio trae la conversación y la venta se cierra por WhatsApp, Messenger o teléfono.</li>
+<li><b>Los que venden en su página.</b> Tiendas en línea, startups y landing pages con su propio checkout.</li>
+<li><b>En México, y en Estados Unidos al mercado hispano.</b></li>
+</ul>
+<p class="aq-f">Lo que todos tienen en común: ya venden, ya le meten a anuncios cada mes, y nadie les ha dicho cuál de sus áreas mover primero ni cuándo.</p>
+<p class="aq-yo">Eso es lo que hago.</p>
 </div>
-
-<section class="areas">
-  <div class="wrap">
-    <span class="rotulo">Lo que reviso</span>
-    <h2>Las 13 áreas</h2>
-    <p class="sub">Cinco son números. Ocho son la máquina que los produce. Si una está en rojo, se nota en todas las demás.</p>
-
-    <div class="grupo narrow">
-      <p class="tit">Los números</p>
-      <div class="grid num">
-        <span>Venta mensual</span>
-        <span>Tasa de cierre</span>
-        <span>CAC</span>
-        <span>ROAS</span>
-        <span>Utilidad</span>
-        <span>Atribución</span>
-      </div>
-    </div>
-
-    <div class="grupo narrow">
-      <p class="tit">La máquina</p>
-      <div class="grid">
-        <span>Oferta</span>
-        <span>Cliente</span>
-        <span>Equipo de ventas</span>
-        <span>Respuesta a leads</span>
-        <span>Generación de ads</span>
-        <span>Creatividades</span>
-        <span class="full">Automatización</span>
-      </div>
-    </div>
-  </div>
+</header>
+<section class="cosas">
+<h2 class="sk">Dos cosas listas para ti</h2>
+<p class="ss">Y aquí abajo dice exactamente qué te llevas en cada una, para que no te lleves una sorpresa.</p>
+<div class="caja">
+<div class="cabeza">
+<span class="kk libre">Gratis</span>
+<span class="tt">El diagnóstico de tus 13 áreas</span>
+</div>
+<p class="dd">Contestas 10 preguntas en 2 minutos. Es el mismo recorrido que hago cuando reviso un negocio por dentro, nada más que lo haces tú solo.</p>
+<div class="split">
+<div>
+<div class="llevas">Qué te llevas al terminar</div>
+<ul class="li">
+<li><b>Tu mapa pintado:</b> las 13 áreas de tu negocio en verde, amarillo o rojo, de un vistazo.</li>
+<li><b>Cuál te está frenando hoy.</b> No las trece: la que tiene que arreglarse primero.</li>
+<li><b>El primer paso de esa área</b>, para hacerlo esta semana y sin gastar un peso.</li>
+<li><b>Tu mapa por correo</b>, para volver a verlo cuando quieras.</li>
+</ul>
+<a class="btn" href="https://diagnostico.anwarsepulveda.com/">Empezar mi diagnóstico &rarr;</a>
+<p class="nota">Sale de más de 100 negocios que he revisado por dentro.</p>
+</div>
+<div>
+<div class="fono"><img src="/dx.jpg" width="480" height="852" loading="lazy" decoding="async" alt="Ejemplo del mapa de 13 áreas que entrega el diagnóstico"></div>
+<p class="fcap">Así se ve tu mapa<br>cuando terminas.</p>
+</div>
+</div>
+</div>
+<div class="caja">
+<div class="cabeza">
+<span class="kk">Gratis</span>
+<span class="tt">5 minutos que te pueden cambiar el mes</span>
+</div>
+<p class="dd">Se lee en 5 minutos y es uno por semana. Voy empezando, así que el primero sale en cuanto tenga a quién mandárselo.</p>
+<div class="llevas">Qué trae cada correo</div>
+<ul class="li">
+<li><b>Un caso que vi adentro de una cuenta real</b>, con el número exacto que delató la fuga.</li>
+<li><b>Un dato que cambia cómo lees tus métricas.</b> Como el de Stanford: el 44% de las conexiones a internet tiene más de una persona detrás, y por eso tu frecuencia no cuadra.</li>
+<li><b>Algo que aprendí perdiendo mi propio dinero</b>, antes de cobrarle a nadie por saberlo.</li>
+</ul>
+<form id="nlForm" novalidate>
+<div class="nlrow">
+<input type="email" id="nlMail" placeholder="tu@correo.com" autocomplete="email" required>
+<button type="submit" id="nlBtn">Apúntame</button>
+</div>
+<div class="nlok" id="nlOk" hidden>Listo, quedas en la lista. El primero te llega en cuanto salga.</div>
+<div class="nlerr" id="nlErr" hidden>Revisa el correo, algo no cuadró.</div>
+</form>
+<p class="nota">Te sales cuando quieras, con un clic.</p>
+</div>
 </section>
-
-<div class="wrap">
-
-  <section class="llevas narrow">
-    <span class="rotulo">Al terminar</span>
-    <h2>Qué te llevas</h2>
-    <ul>
-      <li>
-        <b>Tu mapa completo</b>
-        <p>Las 13 áreas, cada una en verde, amarillo o rojo. En una pantalla ves cómo traes el negocio hoy.</p>
-      </li>
-      <li>
-        <b>Cuál te está frenando</b>
-        <p>No las 13 al mismo tiempo. La que hay que mover primero, y por qué esa y no otra.</p>
-      </li>
-      <li>
-        <b>Qué hacer esta semana</b>
-        <p>Los pasos concretos para esa área. Con los números de tu propio negocio, no con teoría.</p>
-      </li>
-      <li>
-        <b>El link en tu correo</b>
-        <p>Para volver a verlo cuando quieras, o pasárselo a quien te ayuda a operar.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="firma narrow">
-    <p>En 2011 fundé völtoch, mi marca de artículos deportivos. Llegamos a vender en más de 5,000 puntos de venta, en las cadenas más grandes de México.</p>
-    <p>Después escalé la venta en línea de 0 a $650,000 al mes. Y no sabía que estábamos perdiendo dinero.</p>
-    <p class="remate">No me lo escondió nadie. Yo no lo estaba midiendo.</p>
-    <p class="nombre">Anwar Sepúlveda<span>Socio de crecimiento</span><span class="esp2">Especialista en campañas que venden por WhatsApp</span></p>
-  </section>
-
-  <section class="cierre-cta">
-    <h2>Empecemos por saber<br>qué te está frenando.</h2>
-    <a class="cta" href="https://diagnostico.anwarsepulveda.com/">Empezar mi diagnóstico &rarr;</a>
-    <p class="trust">Gratis · 10 preguntas · resultados al instante</p>
-  </section>
-
-  <footer>
-    <div class="frow">
-      <div class="flinks">
-        <a href="/metrica-termostato/">Qué es la métrica termostato</a>
-        <a href="/que-es-un-growth-partner/">Qué es un socio de crecimiento</a>
-      </div>
-      <p class="cred">Anwar Sepúlveda · <span id="yr">2026</span></p>
-    </div>
-  </footer>
-
+<section class="posts" id="posts">
+<h2 class="sk">Lo último que subí</h2>
+<p class="ss">Para que veas de qué se trata antes de darme tu correo.</p>
+<div class="plist">
+<a class="p" href="https://www.linkedin.com/feed/update/urn:li:share:7497653981209624576/" target="_blank" rel="noopener">
+<div class="pm"><svg><use href="#i-li"/></svg><span>LinkedIn · 24 ago</span></div>
+<div class="ph">“Ya bajé el costo por mensaje a $4 pesos.” ¿Y vendiste más, o nada más atendiste a más preguntones?</div>
+<div class="pg">Leer &rarr;</div>
+</a>
+<a class="p" href="https://www.linkedin.com/feed/update/urn:li:share:7496589462588669952/" target="_blank" rel="noopener">
+<div class="pm"><svg><use href="#i-li"/></svg><span>LinkedIn · 21 ago</span></div>
+<div class="ph">Pagué un video espectacular para vender unos tenis del América en mi tienda. No vendió ni un par.</div>
+<div class="pg">Leer &rarr;</div>
+</a>
+<a class="p" href="https://www.facebook.com/220708064465009/posts/122375334806222156" target="_blank" rel="noopener">
+<div class="pm"><svg><use href="#i-fb"/></svg><span>Facebook · 15 ago</span></div>
+<div class="ph">Stanford revisó 195 millones de conexiones: el 44% tiene más de una persona detrás. Tu frecuencia no puede estar bien contada.</div>
+<div class="pg">Leer &rarr;</div>
+</a>
+<a class="p" href="https://www.facebook.com/220708064465009/posts/122374842644222156" target="_blank" rel="noopener">
+<div class="pm"><svg><use href="#i-fb"/></svg><span>Facebook · 13 ago</span></div>
+<div class="ph">Me perdí la final del Mundial por creerle a una campaña de marketing. Yo era justo el cliente por el que pagaron un dineral.</div>
+<div class="pg">Leer &rarr;</div>
+</a>
 </div>
-
+<div class="sigueme">
+<span class="sl">Sígueme donde te acomode:</span>
+<div class="redes">
+<a href="https://www.linkedin.com/in/anwarsepulveda/" rel="me" aria-label="LinkedIn"><svg><use href="#i-li"/></svg></a>
+<a href="https://www.facebook.com/anwarsepulveda" rel="me" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+<a href="https://www.instagram.com/anwarsepulveda/" rel="me" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+<a href="https://www.youtube.com/@anwarsepulveda" rel="me" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+</div>
+</div>
+</section>
+<section class="firma">
+<p>En 2011 fundé völtoch, mi marca de artículos deportivos. Llegamos a vender en más de 5,000 puntos de venta, en las cadenas más grandes de México.</p>
+<p>Después escalé la venta en línea de 0 a $650,000 al mes. Y no sabía que estábamos perdiendo dinero.</p>
+<p class="remate">No me lo escondió nadie. Yo no lo estaba midiendo.</p>
+<p>Desde entonces reviso negocios por dentro: los números, y la máquina que los produce.</p>
+<p class="cf-intro">Te podría llenar esto de casos. Van tres nada más, dos de clientes y uno mío. Si quieres saber si sé de lo que hablo, <a class="parriba" href="#posts">lee lo que subo aquí arriba <i>&uarr;</i></a></p>
+<div class="cifras">
+<div class="cf">
+<div class="cf-n">15 <i>&rarr;</i> 300+</div>
+<div class="cf-d">cierres high-ticket al mes, en un año</div>
+</div>
+<div class="cf">
+<div class="cf-n">$90K <i>&rarr;</i> $500K</div>
+<div class="cf-d">de venta al mes, en ocho meses</div>
+</div>
+<div class="cf">
+<div class="cf-n">55% <i>&rarr;</i> 87%</div>
+<div class="cf-d">de cierre, cuando dejamos de confiar y empezamos a medir</div>
+</div>
+</div>
+<p class="cf-pie">He manejado pauta desde $10 mil hasta $5 millones de pesos al mes. El trabajo es el mismo: encontrar cuál área mover, y cuándo.</p>
+<p class="nombre">Anwar Sepúlveda<span>Growth partner · Socio de crecimiento</span></p>
+</section>
+<footer>
+<div class="links">
+<a href="/metrica-termostato/">Qué es la Métrica Termostato</a>
+<a href="/que-es-un-growth-partner/">Qué es un growth partner</a>
+</div>
+<img class="fmark" src="/as.svg" width="103" height="19" alt="" aria-hidden="true">
+<p class="cred"><b>Anwar Sepúlveda</b> · <span id="yr">2026</span></p>
+</footer>
+</div>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Anwar Sepúlveda",
-  "jobTitle":"Socio de crecimiento",
-  "url":"https://anwarsepulveda.com/",
-  "areaServed":["México","Estados Unidos"],
-  "knowsAbout":["Campañas que venden por WhatsApp","Medición de ventas","Crecimiento de negocios"],
-  "sameAs":["https://www.linkedin.com/in/anwarsepulveda","https://www.instagram.com/anwarsepulveda"]
+"@context":"https://schema.org",
+"@type":"Person",
+"name":"Anwar Sepúlveda",
+"jobTitle":"Socio de crecimiento",
+"description":"Socio de crecimiento. Revisa negocios por dentro para encontrar cuál de sus áreas hay que mover primero y en qué orden, antes de escalar la pauta. Trabaja con negocios que cierran por conversación y con tiendas y startups que venden en su propia página, en México y en el mercado hispano de Estados Unidos.",
+"url":"https://anwarsepulveda.com/",
+"areaServed":["México","Estados Unidos"],
+"knowsAbout":["Métrica Termostato","Growth partner","Socio de crecimiento","Diagnóstico de negocios","Medición de ventas","Atribución de ventas","Escalamiento de campañas"],
+"sameAs":["https://www.instagram.com/anwarsepulveda/","https://www.linkedin.com/in/anwarsepulveda/","https://www.facebook.com/anwarsepulveda","https://www.youtube.com/@anwarsepulveda"]
 }
 </script>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
-<!-- home v2.4 · 21 ago 2026 -->
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+var WEBHOOK="https://hook.us2.make.com/136bp8giaczmgcv5mh8k4betdqh7uwd1";
+var f=document.getElementById('nlForm'), i=document.getElementById('nlMail'),
+b=document.getElementById('nlBtn'), ok=document.getElementById('nlOk'), er=document.getElementById('nlErr');
+function utm(){var p=new URLSearchParams(location.search),o={};
+["utm_source","utm_medium","utm_campaign","utm_content","utm_term"].forEach(function(k){if(p.get(k))o[k]=p.get(k);});return o;}
+f.addEventListener('submit',function(e){
+e.preventDefault(); er.hidden=true;
+var v=(i.value||"").trim();
+if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){ er.hidden=false; return; }
+b.disabled=true; b.textContent="...";
+var body=Object.assign({action:"newsletter_signup",email:v,origen:"home",fecha:new Date().toISOString()},utm());
+fetch(WEBHOOK,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+.catch(function(){})
+.finally(function(){ f.querySelector('.nlrow').hidden=true; ok.hidden=false; });
+});
+})();
+</script>
+<!-- home v5.0 · borrador, pendiente pasada de voz de Anwar -->
 </body>
 </html>
