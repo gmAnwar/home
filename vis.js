@@ -55,7 +55,8 @@
       utm_content: u.utm_content || "", utm_term: u.utm_term || "",
       first_source: first.s, first_medium: first.m, first_campaign: first.c,
       ref: ref, fbclid: q.get("fbclid") ? 1 : 0,
-      disp: (window.matchMedia && matchMedia("(max-width:768px)").matches ? "movil" : "escritorio"),
+      disp: (window.matchMedia && matchMedia("(pointer:coarse)").matches ? "movil"
+            : (window.matchMedia && matchMedia("(max-width:768px)").matches ? "movil" : "escritorio")),
       pantalla: innerWidth + "x" + innerHeight, idioma: navigator.language || "" };
 
     var body = new Blob([JSON.stringify(d)], { type: "text/plain;charset=UTF-8" });
