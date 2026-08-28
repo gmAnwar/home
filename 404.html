@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Anwar Sepúlveda</title>
+<style>
+  html,body{margin:0;height:100%;background:#fff;color:#14171C;
+    font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+    display:flex;align-items:center;justify-content:center}
+  p{font-size:15px;opacity:.6}
+</style>
+<script>
+(function () {
+  /* Enlaces cortos propios. anwarsepulveda.com/ig  ->  home con su etiqueta de origen.
+     Un solo archivo: para agregar un código nuevo, basta con una línea en MAPA.
+     [fuente, medio, destino opcional]  ·  destino por defecto: la home. */
+  var MAPA = {
+    "ig":      ["instagram", "bio"],
+    "igh":     ["instagram", "historia"],
+    "fb":      ["facebook",  "bio"],
+    "fbp":     ["facebook",  "post"],
+    "grupo":   ["grupo-fb",  "post"],
+    "in":      ["linkedin",  "bio"],
+    "inp":     ["linkedin",  "post"],
+    "wa":      ["whatsapp",  "dm"],
+    "mail":    ["email",     "correo"],
+    "yt":      ["youtube",   "video"],
+    "tarjeta": ["tarjeta",   "qr"],
+
+    /* directo al diagnosticador */
+    "dx":      ["directo",   "corto", "https://diagnostico.anwarsepulveda.com/"],
+    "dx-ig":   ["instagram", "bio",   "https://diagnostico.anwarsepulveda.com/"],
+    "dx-fb":   ["facebook",  "post",  "https://diagnostico.anwarsepulveda.com/"],
+    "dx-grupo":["grupo-fb",  "post",  "https://diagnostico.anwarsepulveda.com/"]
+  };
+
+  var code = location.pathname.replace(/^\/+|\/+$/g, "").toLowerCase();
+  var m = MAPA[code];
+  var destino = "/";
+  var p = new URLSearchParams(location.search); /* conserva fbclid, igsh, etc. */
+
+  if (m) {
+    if (m[2]) destino = m[2];
+    p.set("utm_source", m[0]);
+    p.set("utm_medium", m[1]);
+  }
+  var q = p.toString();
+  location.replace(destino + (q ? (destino.indexOf("?") > -1 ? "&" : "?") + q : ""));
+})();
+</script>
+</head>
+<body>
+<p>Un momento…</p>
+<noscript><p>Ve a <a href="https://anwarsepulveda.com/">anwarsepulveda.com</a></p></noscript>
+</body>
+</html>
