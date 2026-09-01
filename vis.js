@@ -48,8 +48,6 @@
       LS.setItem("as_first", JSON.stringify(first));
     }
 
-    window.ASV = { vid: vid, sid: sid, first: first, utm: u };
-
     var d = { tk: TK, pagina: PAGE, path: location.pathname, vid: vid, sid: sid, nueva: nueva,
       utm_source: u.utm_source || "", utm_medium: u.utm_medium || "", utm_campaign: u.utm_campaign || "",
       utm_content: u.utm_content || "", utm_term: u.utm_term || "",
@@ -62,6 +60,17 @@
     var body = new Blob([JSON.stringify(d)], { type: "text/plain;charset=UTF-8" });
     if (navigator.sendBeacon) navigator.sendBeacon(EP, body);
     else fetch(EP, { method: "POST", mode: "no-cors", body: JSON.stringify(d) });
+
+    /* eventos de página (clics que importan) -> misma pestaña VISITAS, path=/evento/<nombre> */
+    function hit(name) {
+      try {
+        var e = Object.assign({}, d, { path: "/evento/" + String(name).replace(/[^a-z0-9_-]/gi, ""), nueva: 0 });
+        var bb = new Blob([JSON.stringify(e)], { type: "text/plain;charset=UTF-8" });
+        if (navigator.sendBeacon) navigator.sendBeacon(EP, bb);
+        else fetch(EP, { method: "POST", mode: "no-cors", body: JSON.stringify(e) });
+      } catch (err) {}
+    }
+    window.ASV = { vid: vid, sid: sid, first: first, utm: u, hit: hit };
 
     /* la identidad viaja al otro dominio propio (home <-> diagnostico <-> go/GHL) */
     document.addEventListener("click", function (ev) {
